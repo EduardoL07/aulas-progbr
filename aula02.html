@@ -6,12 +6,67 @@
     <title>Float</title>
     <style type="text/css">
         body {
-            
+            font-size: 1.2rem;
         }
 
+        .card {
+            position: relative;
+            float: left;
+            width: 400px;
+            height: 200px;
+            border: 2px solid green;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        .c1 {
+            background-color: beige;
+            line-height: 200px;
+        }
+
+        .c2 {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: blue;
+
+            transform: translate(-50%, -50%);
+        }
+
+        .card2 {
+            clear: left;
+            float: left;
+            border: 2px solid green;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
     </style>
 </head>
 <body>
-    
+    <div class="card">
+
+        <div class="c1">
+            Eduardo Lessa
+        </div>
+        
+    </div>
+
+    <div class="card">
+
+        <div class="c2">
+            Eduardo Lessa
+        </div>
+        
+    </div>
+
+    <div class="card2">
+        <div style="background-color: red;">
+            Eduardo Lessa
+        </div>
+    </div>
+
 </body>
 </html>
